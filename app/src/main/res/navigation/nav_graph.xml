@@ -1,0 +1,24 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.abdulrahman.technicalassessment.home.presentation.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_userList"
+            app:destination="@id/userList" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userList"
+        android:name="com.abdulrahman.technicalassessment.userList.presentation.UserListFragment"
+        android:label="User List"
+        tools:layout="@layout/fragment_user_list" />
+
+</navigation>

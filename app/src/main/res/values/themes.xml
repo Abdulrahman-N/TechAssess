@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TechnicalAssessment" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="enableEdgeToEdge">true</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnPrimary">@color/background</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorOutline">@color/onSurface</item>
+    </style>
+
+    <style name="Theme.TechnicalAssessment" parent="Base.Theme.TechnicalAssessment" />
+</resources>

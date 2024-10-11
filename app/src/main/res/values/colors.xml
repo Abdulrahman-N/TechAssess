@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="background">#f4f5f9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onBackground">#191629</color>
+    <color name="onSurface">#949494</color>
+
+    <color name="red">#D01C1C</color>
+    <color name="green">#26A69A</color>
+    <color name="blue">#2196F3</color>
+    <color name="pink">#E91E63</color>
+
+</resources>

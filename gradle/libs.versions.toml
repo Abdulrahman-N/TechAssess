@@ -1,0 +1,53 @@
+[versions]
+
+#Build Config
+javaVersion = "VERSION_11"
+minSdk = "28"
+targetSdk = "35"
+compileSdk = "35"
+applicationId = "com.abdulrahman.technicalassessment"
+versionCode = "1"
+versionName = "0.1"
+
+agp = "8.7.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+viewModel = "2.8.6"
+navigation = "2.8.2"
+dagger_hilt = "2.51.1"
+hiltAndroidX = "1.2.0"
+okhttp = "4.12.0"
+gson = "2.10.1"
+rxjava = "3.1.5"
+rxAndroid = "3.0.2"
+security = "1.0.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+viewModel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "viewModel" }
+navigation = { module = "androidx.navigation:navigation-fragment", version.ref = "navigation" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
+rxjava-android = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxAndroid" }
+
+# Dagger
+di-hiltCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger_hilt" }
+di-daggerHilt = { module = "com.google.dagger:hilt-android", version.ref = "dagger_hilt" }
+di-hiltNavigation = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltAndroidX" }
+di-hiltJetpackCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltAndroidX" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+dagger = { id = "com.google.dagger.hilt.android", version.ref = "dagger_hilt" }

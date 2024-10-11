@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24.dp"
+    android:layout_marginVertical="8.dp"
+    app:cardBackgroundColor="?colorSurface"
+    app:cardCornerRadius="8.dp"
+    app:cardElevation="0.dp"
+    app:contentPadding="16.dp"
+    app:strokeWidth="0.dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorSurface">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?colorOnBackground"
+            android:textFontWeight="600"
+            app:fontFamily="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/email"
+            android:layout_width="0.dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.dp"
+            android:layout_marginEnd="8.dp"
+            android:textColor="?colorOutline"
+            android:textSize="12.sp"
+            app:layout_constraintEnd_toStartOf="@id/status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4.dp"
+            android:paddingBottom="4.dp"
+            android:textFontWeight="500"
+            android:textSize="12.sp"
+            app:chipBackgroundColor="?android:colorBackground"
+            app:chipCornerRadius="24.dp"
+            app:chipMinHeight="0.dp"
+            app:chipMinTouchTargetSize="0.dp"
+            app:chipStrokeWidth="0.dp"
+            app:fontFamily="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textEndPadding="2.dp"
+            app:textStartPadding="2.dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textFontWeight="500"
+            app:fontFamily="bold"
+            app:layout_constraintBottom_toBottomOf="@id/email"
+            app:layout_constraintEnd_toEndOf="@id/status"
+            app:layout_constraintStart_toStartOf="@id/status"
+            app:layout_constraintTop_toTopOf="@id/email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
